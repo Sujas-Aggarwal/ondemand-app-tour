@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+README.md
 
 # Precompiled Headers
 *.gch
@@ -30,3 +31,5 @@
 *.exe
 *.out
 *.app
+
+node_modules/

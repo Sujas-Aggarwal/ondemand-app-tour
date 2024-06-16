@@ -1,0 +1,77 @@
+[
+    {
+        "name": "intro1",
+        "steps": [
+            {
+                "element": ".page-header",
+                "popover": {
+                    "title": "Before you start",
+                    "description": "This is a short tour of the website to help you gain familiarty with it"
+                }
+            },
+            {
+                "element": "#menu-icon-tour",
+                "popover": {
+                    "title": "Explore Categories",
+                    "description": "You can explore categories from here"
+                }
+            },
+            {
+                "element": "#cart-button-tour",
+                "popover": {
+                    "title": "Check your Cart",
+                    "description": "Once you have choosen your stuff, you can review your shopping list"
+                }
+            }
+        ]
+    },
+    {
+        "name": "intro2",
+        "steps": [
+            {
+                "element": "#search-tour",
+                "popover": {
+                    "title": "Search Here",
+                    "description": "Search your queries here"
+                }
+            },
+            {
+                "element": "#menu-icon-tour",
+                "popover": {
+                    "title": "Explore Categories",
+                    "description": "You can explore categories from here"
+                }
+            },
+            {
+                "element": "#cart-button-tour",
+                "popover": {
+                    "title": "Check your Cart",
+                    "description": "Once you have choosen your stuff, you can review your shopping list"
+                }
+            }
+        ]
+    },
+    {
+        "name": "intro3",
+        "steps": [
+            {
+                "element": "#sign-in-button-tour",
+                "popover": { "title": "Sign Here", "description": "Better UX" }
+            },
+            {
+                "element": "#menu-icon-tour",
+                "popover": {
+                    "title": "Explore Categories",
+                    "description": "You can explore categories from here"
+                }
+            },
+            {
+                "element": "#cart-button-tour",
+                "popover": {
+                    "title": "Check your Cart",
+                    "description": "Once you have choosen your stuff, you can review your shopping list"
+                }
+            }
+        ]
+    }
+]

@@ -36,3 +36,4 @@ node_modules/
 node-server
 myenv
 .env
+.vercel

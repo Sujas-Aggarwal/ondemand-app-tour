@@ -5,6 +5,102 @@
         "steps": "upload_image",
         "type": "help"
     },
+
+    {
+        "user": "hi",
+        "response": "Hello! How can I assist you today?",
+        "type": "general"
+    },
+    {
+        "user": "hello",
+        "response": "Hi there! How can I help you?",
+        "type": "general"
+    },
+    {
+        "user": "good day",
+        "response": "Hello! Welcome to Amazon support. How can I assist you today?",
+        "type": "general"
+    },
+    {
+        "user": "hi there",
+        "response": "Hey! How may I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "good morning",
+        "response": "Good morning! How can I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "good afternoon",
+        "response": "Good afternoon! What can I help you with?",
+        "type": "general"
+    },
+    {
+        "user": "evening",
+        "response": "Good evening! How may I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "howdy",
+        "response": "Howdy! How can I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "hi Amazon",
+        "response": "Hello! Welcome to Amazon support. How can I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "what can you do for me?",
+        "response": "I can assist you with orders, product recommendations, returns, refunds, account security, and more. How can I help you today?",
+        "type": "general"
+    },
+    {
+        "user": "do you have time to help me?",
+        "response": "Of course! I'm here to assist you. What can I do for you?",
+        "type": "general"
+    },
+    {
+        "user": "could you please help me?",
+        "response": "Absolutely! How can I assist you?",
+        "type": "general"
+    },
+    {
+        "user": "can you assist with a purchase issue?",
+        "response": "Certainly! Please provide details of the issue, and I'll do my best to help.",
+        "type": "general"
+    },
+    {
+        "user": "need help with an order",
+        "response": "Sure! Please let me know your order details or the issue you're facing.",
+        "type": "general"
+    },
+    {
+        "user": "looking for product recommendations",
+        "response": "Of course! What type of product are you looking for? I can suggest some options.",
+        "type": "general"
+    },
+    {
+        "user": "how do I return an item?",
+        "response": "To return an item, you can initiate the return process through your Amazon account. Would you like detailed instructions?",
+        "type": "general"
+    },
+    {
+        "user": "what's the status of my delivery?",
+        "response": "Let me check that for you. Please provide your order number or tracking details.",
+        "type": "general"
+    },
+    {
+        "user": "any updates on my refund?",
+        "response": "I can check the status of your refund. Please provide me with the details of your return.",
+        "type": "general"
+    },
+    {
+        "user": "how secure is my account?",
+        "response": "Your account security is important to us. We use advanced security measures to protect your information. Is there something specific you're concerned about?",
+        "type": "general"
+    },
     {
         "user": "how much is the price",
         "response": "We have multiple ranges starting from 100Rs",

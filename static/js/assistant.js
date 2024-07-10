@@ -45,8 +45,8 @@ function addMessage() {
         body: raw,
         redirect: "follow",
     };
-
-    fetch("http://127.0.0.1:5000/chatbot", requestOptions)
+// the route is /chatbot
+    fetch("/chatbot", requestOptions)
         .then((response) => {
             return response.json();
         })

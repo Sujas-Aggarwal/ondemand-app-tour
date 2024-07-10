@@ -93,6 +93,7 @@ body {
 }
 .chatbot-input > input {
     width: 80%;
+    min-height: 40px;
     height: 100%;
     border: none;
     outline: none;

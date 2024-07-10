@@ -1,0 +1,13 @@
+[
+    {
+        "user": "how to upload image",
+        "response": "Sure, Starting the tutorial",
+        "steps": "upload_image",
+        "type": "help"
+    },
+    {
+        "user": "how much is the price",
+        "response": "We have multiple ranges starting from 100Rs",
+        "type": "general"
+    }
+]

@@ -1,14 +1,4 @@
-let messages = [
-    {
-        role: "bot",
-        content:
-            "Hello! I am your personal assistant. How can I help you today?",
-    },
-    {
-        role: "user",
-        content: "I am looking for a new job",
-    },
-];
+let messages = [];
 const chatBotMessages = document.querySelector(".chatbot-message");
 for (let i = 0; i < messages.length; i++) {
     const message = messages[i];
@@ -41,4 +31,39 @@ function addMessage() {
         role: "user",
         content: message,
     });
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+        role: "user",
+        message: message,
+    });
+
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+    };
+
+    fetch("http://127.0.0.1:5000/chatbot", requestOptions)
+        .then((response) => {
+            return response.json();
+        })
+        .then((result) => {
+            console.log(result);
+            const chatMessage = document.createElement("div");
+            chatMessage.classList.add("message");
+            chatMessage.classList.add("bot-message");
+            chatMessage.innerHTML = result.response;
+            chatBotMessages.appendChild(chatMessage);
+            messages.push({
+                role: "bot",
+                content: result.response,
+            });
+            if (result.type == "help") {
+                startTour(result.steps.steps);
+            }
+        })
+        .catch((error) => console.error(error));
 }

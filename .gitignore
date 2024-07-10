@@ -34,5 +34,5 @@ README.md
 
 node_modules/
 node-server
-Scripts
-Lib
+myenv
+.env

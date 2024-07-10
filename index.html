@@ -31,6 +31,35 @@
         <title>Amazon.com-Shop Online</title>
     </head>
     <body>
+        <div class="chatbot-circle shrink">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png"
+                alt="assistant"
+                width="50px"
+            />
+        </div>
+        <div class="chatbot active">
+            <div>
+                <div class="chatbot-box">
+                    <div class="chatbot-head">
+                        <h3>Amazon Assistant</h3>
+                    </div>
+                    <div class="chatbot-content">
+                        <div class="chatbot-messages"></div>
+                        <div class="chatbot-input">
+                            <input
+                                type="text"
+                                placeholder="Type your message here"
+                            />
+                            <button>Send</button>
+                        </div>
+                        <div class="chatbot-message">
+                            <p style="text-align: center; font-weight: bold;">- Ask Your Queries Here -</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="sidebar">
             <div class="hdn-head">
                 <h2>Hello, Sign in</h2>
@@ -256,7 +285,9 @@
                         <div class="box-b">
                             <div class="best">
                                 <h3>Sign up for the Best Experience</h3>
-                                <button id="sign-in-button-tour">Sign in securely</button>
+                                <button id="sign-in-button-tour">
+                                    Sign in securely
+                                </button>
                             </div>
                             <div>
                                 <img src="images/banner.jpg" alt="" />
@@ -548,6 +579,7 @@
             referrerpolicy="no-referrer"
         ></script>
 
-        <script type="module" src="tourScript.js"></script>
+        <script src="tourScript.js"></script>
+        <script src="assistant.js"></script>
     </body>
 </html>

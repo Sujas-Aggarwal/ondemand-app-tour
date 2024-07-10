@@ -33,3 +33,6 @@ README.md
 *.app
 
 node_modules/
+node-server
+Scripts
+Lib

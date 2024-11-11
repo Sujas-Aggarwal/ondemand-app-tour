@@ -5,6 +5,18 @@
         "steps": "upload_image",
         "type": "help"
     },
+    {
+        "user": "how to sign in",
+        "response": "Sure, Starting the tutorial",
+        "steps": "sign_in",
+        "type": "help"
+    },
+    {
+        "user": "how to buy products",
+        "response": "Sure, Starting the tutorial",
+        "steps": "buy_products",
+        "type": "help"
+    },
 
     {
         "user": "hi",

@@ -37,3 +37,6 @@ node-server
 myenv
 .env
 .vercel
+
+.venv
+__pycache__

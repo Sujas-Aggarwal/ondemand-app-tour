@@ -39,6 +39,33 @@ def find_matching_response(user_message):
                 'response': data['response'],
                 'steps': fetch_steps(data['steps'])
             }
+        #use intent classification to classify the user message
+    # Use basic text similarity to find most similar query
+    max_similarity = 0
+    best_match = None
+    
+    user_tokens = set(user_message.lower().split())
+    
+    for data in responseData:
+        db_tokens = set(data['user'].lower().split())
+        # Calculate Jaccard similarity between user message and database query
+        intersection = len(user_tokens.intersection(db_tokens))
+        union = len(user_tokens.union(db_tokens))
+        similarity = intersection / union if union > 0 else 0
+        
+        if similarity > max_similarity:
+            max_similarity = similarity
+            best_match = data
+    
+    # Return best match if similarity exceeds threshold
+    if best_match and max_similarity > 0.3:
+        if best_match['type'] == 'general':
+            return {'type': 'general', 'response': best_match['response']}
+        return {
+            'type': 'help',
+            'response': best_match['response'], 
+            'steps': fetch_steps(best_match['steps'])
+        }
     return {'type': 'general', 'response': 'Sorry, I did not understand your request.'}
 
 def fetch_steps(flow_steps):

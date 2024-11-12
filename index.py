@@ -39,15 +39,18 @@ def find_matching_response(user_message):
                 'response': data['response'],
                 'steps': fetch_steps(data['steps'])
             }
-        #use intent classification to classify the user message
+    #use intent classification to classify the user message
     # Use basic text similarity to find most similar query
     max_similarity = 0
     best_match = None
+    threshold = 0.2
     
     user_tokens = set(user_message.lower().split())
     
     for data in responseData:
-        db_tokens = set(data['user'].lower().split())
+        db_tokens = data['user'].lower().split()
+        if data['keywords'] is not None:
+            db_tokens.extend(data['keywords'])
         # Calculate Jaccard similarity between user message and database query
         intersection = len(user_tokens.intersection(db_tokens))
         union = len(user_tokens.union(db_tokens))
@@ -58,7 +61,7 @@ def find_matching_response(user_message):
             best_match = data
     
     # Return best match if similarity exceeds threshold
-    if best_match and max_similarity > 0.3:
+    if best_match and max_similarity > threshold:
         if best_match['type'] == 'general':
             return {'type': 'general', 'response': best_match['response']}
         return {
